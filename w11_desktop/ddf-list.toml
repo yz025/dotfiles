@@ -7,6 +7,10 @@ original = "~/.config/stylua.toml"
 copy = "./stylua.toml"
 
 [[dotfiles]]
+original = "~/Documents/projects/.stylua.toml"
+copy = "./.stylua.toml"
+
+[[dotfiles]]
 original = "~/.config/wezterm"
 copy = "./wezterm"
 
@@ -23,7 +27,7 @@ original = "~/Documents/PowerShell"
 copy = "./pwsh"
 
 [[dotfiles]]
-original = "~/Documents/dev/projects/.clang-format"
+original = "~/Documents/projects/.clang-format"
 copy = "./.clang-format"
 
 [[dotfiles]]
