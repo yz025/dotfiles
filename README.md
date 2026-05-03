@@ -21,4 +21,4 @@
     * [rasmus](https://github.com/kvrohit/rasmus.nvim)
 ## Notes
 * `ddf-list.toml`: check [this](https://github.com/yz-5555/ddf)
-* `git_fetch_mtime` in [starship config](https://github.com/yz-5555/dotfiles/blob/main/f43_desktop/starship.toml#L18): check [this](https://github.com/yz-5555/git_fetch_mtime)
+* `git_fetch_mtime` in [starship config](https://github.com/yz-5555/dotfiles/blob/main/w11_desktop/starship.toml#L18): check [this](https://github.com/yz-5555/git_fetch_mtime)
