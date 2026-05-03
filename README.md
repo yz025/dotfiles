@@ -20,4 +20,5 @@
 * Theme
     * [rasmus](https://github.com/kvrohit/rasmus.nvim)
 ## Notes
-`ddf-list.toml` in each OS is for [the tool I made](https://github.com/yz-5555/ddf)
+* `ddf-list.toml`: check [this](https://github.com/yz-5555/ddf)
+* `git_fetch_mtime` in [starship config](https://github.com/yz-5555/dotfiles/blob/main/f43_desktop/starship.toml#L18): check [this](https://github.com/yz-5555/git_fetch_mtime)

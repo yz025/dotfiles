@@ -1,6 +1,6 @@
 # cd
 function cddot ($path) {
-	Set-Location "$HOME\Documents\dev\dotfiles\$path"
+	Set-Location "$HOME\Documents\dotfiles\$path"
 }
 function cdnotes ($path) {
 	Set-Location "$HOME\Documents\notes\$path"
@@ -9,7 +9,7 @@ function cdpwsh ($path) {
 	Set-Location "$HOME\Documents\PowerShell\$path"
 }
 function cdproj ($path) {
-	Set-Location "$HOME\Documents\dev\projects\$path"
+	Set-Location "$HOME\Documents\projects\$path"
 }
 function cdconf ($path) {
 	Set-Location "$env:XDG_CONFIG_HOME\$path"

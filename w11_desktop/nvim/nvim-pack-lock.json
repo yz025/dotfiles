@@ -28,10 +28,18 @@
       "rev": "49f7ee7bf3eb00db52c77f84b15bc69f318bafc1",
       "src": "https://github.com/kvrohit/rasmus.nvim"
     },
+    "render-markdown.nvim": {
+      "rev": "3f3eea97b80839f629c951ca660ffd125bfa5b34",
+      "src": "https://github.com/MeanderingProgrammer/render-markdown.nvim"
+    },
     "rustaceanvim": {
       "rev": "2497c7b2a61d4eb5dad716371a64ea82fb068bee",
       "src": "https://github.com/mrcjkb/rustaceanvim",
       "version": "9.0.0 - 10.0.0"
+    },
+    "vim-wakatime": {
+      "rev": "5f458398a217735b908ae40d1c2851cc69e7d817",
+      "src": "https://github.com/wakatime/vim-wakatime"
     }
   }
 }

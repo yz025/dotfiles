@@ -75,3 +75,13 @@ end)
 later(function()
 	add({ 'https://github.com/rafamadriz/friendly-snippets' })
 end)
+
+later(function()
+	add({ 'https://github.com/MeanderingProgrammer/render-markdown.nvim' })
+
+	require('render-markdown').setup({})
+end)
+
+later(function()
+	add({ 'https://github.com/wakatime/vim-wakatime' })
+end)

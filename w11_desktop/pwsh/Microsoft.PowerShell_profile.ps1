@@ -1,6 +1,3 @@
-# starship `starship init powershell < $PATH/.starship_init.ps1`
-. "$HOME\.config\.starship_init.ps1"
-
 # modules
 . "$PSScriptRoot\functions.ps1"
 
@@ -13,8 +10,9 @@ Set-Alias obs ~/scoop/apps/obsidian/current/Obsidian.com
 $env:EDITOR = "nvim"
 $env:YAZI_CONFIG_HOME = "$env:XDG_CONFIG_HOME\yazi"
 $env:YAZI_FILE_ONE = "$HOME\scoop\apps\git\current\usr\bin\file.exe"
-$env:DDF_TARGET = "$HOME\Documents\dev\dotfiles"
-$env:Path += ";$HOME\Documents\dev\projects\ddf\target\release"
+$env:DDF_TARGET = "$HOME\Documents\dotfiles"
+$env:Path += ";$HOME\Documents\projects\ddf\target\release"
+$env:Path += ";$HOME\Documents\projects\git_fetch_mtime"
 
 # yazi
 function y {
@@ -26,3 +24,5 @@ function y {
     }
     Remove-Item -Path $tmp
 }
+
+Invoke-Expression (&starship init powershell)
