@@ -7,11 +7,15 @@ original = "~/.config/alacritty"
 copy = "./alacritty"
 
 [[dotfiles]]
-original = "~/.bashrc"
-copy = "./.bashrc"
+original = "~/.bashrc.d"
+copy = "./bash/.bashrc.d"
 
 [[dotfiles]]
-original = "~/Documents/dev/projects/.clang-format"
+original = "~/.bashrc"
+copy = "./bash/.bashrc"
+
+[[dotfiles]]
+original = "~/Documents/projects/.clang-format"
 copy = "./.clang-format"
 
 [[dotfiles]]
