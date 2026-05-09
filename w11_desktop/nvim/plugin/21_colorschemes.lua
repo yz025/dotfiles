@@ -1,43 +1,51 @@
-vim.pack.add({ 'https://github.com/kvrohit/rasmus.nvim' })
+local add = vim.pack.add
+local later = Config.later
 
--- vim.g.rasmus_variant = "monochrome"
-vim.g.rasmus_italic_functions = false
-vim.g.rasmus_italic_comments = false
-vim.g.rasmus_italic_keywords = false
-vim.g.rasmus_italic_variables = false
-vim.g.rasmus_italic_booleans = false
+later(function()
+	add({ 'https://github.com/kvrohit/rasmus.nvim' })
 
-vim.api.nvim_create_autocmd('ColorScheme', {
-	pattern = 'rasmus',
-	callback = function()
-		local variants = require('rasmus.colors')
-		local cfg = require('rasmus.config').config
-		local c = variants[cfg.variant]
+	-- vim.g.rasmus_variant = "monochrome"
+	vim.g.rasmus_italic_functions = false
+	vim.g.rasmus_italic_comments = false
+	vim.g.rasmus_italic_keywords = false
+	vim.g.rasmus_italic_variables = false
+	vim.g.rasmus_italic_booleans = false
 
-		-- :Inspect or :InspectTree to see these tokens.
+	vim.api.nvim_create_autocmd('ColorScheme', {
+		pattern = 'rasmus',
+		callback = function()
+			local variants = require('rasmus.colors')
+			local cfg = require('rasmus.config').config
+			local c = variants[cfg.variant]
+            local hl = function(name, val)
+                vim.api.nvim_set_hl(0, name, val)
+            end
 
-		-- C/C++
-		vim.api.nvim_set_hl(0, 'Function', { fg = c.blue })
-		vim.api.nvim_set_hl(0, 'Type', { italic = false })
-		vim.api.nvim_set_hl(0, 'Identifier', { fg = c.bright_white })
-		vim.api.nvim_set_hl(0, 'Macro', { bold = true, italic = false })
-		vim.api.nvim_set_hl(0, 'Special', { fg = c.bright_magenta, italic = false })
-		vim.api.nvim_set_hl(0, '@constructor.lua', { fg = c.blue, italic = false })
-		vim.api.nvim_set_hl(0, 'Keyword', { fg = c.bright_magenta })
-		vim.api.nvim_set_hl(0, '@keyword.operator.c', { fg = c.yellow })
-		vim.api.nvim_set_hl(0, '@type.c', { fg = c.bright_yellow })
-		vim.api.nvim_set_hl(0, '@type.cpp', { fg = c.bright_yellow })
+			-- :Inspect or :InspectTree to see these tokens.
 
-		-- Rust
-		vim.api.nvim_set_hl(0, '@type.rust', { fg = c.bright_yellow })
-		vim.api.nvim_set_hl(0, '@constant.builtin.rust', { fg = c.bright_green })
-		vim.api.nvim_set_hl(0, '@module.rust', { fg = c.yellow, force = true })
+			-- C/C++
+			hl('Function', { fg = c.blue })
+			hl('Type', { italic = false })
+			hl('Identifier', { fg = c.bright_white })
+			hl('Macro', { bold = true, italic = false })
+			hl('Special', { fg = c.bright_magenta, italic = false })
+			hl('@constructor.lua', { fg = c.blue, italic = false })
+			hl('Keyword', { fg = c.bright_magenta })
+			hl('@keyword.operator.c', { fg = c.yellow })
+			hl('@type.c', { fg = c.bright_yellow })
+			hl('@type.cpp', { fg = c.bright_yellow })
 
-		-- diagnostics
-		vim.api.nvim_set_hl(0, 'DiagnosticUnderlineError', { fg = c.red, undercurl = true })
-		vim.api.nvim_set_hl(0, 'DiagnosticUnderlineWarn', { fg = c.yellow, undercurl = true })
-		vim.api.nvim_set_hl(0, 'DiagnosticUnderlineInfo', { fg = c.blue, undercurl = true })
-		vim.api.nvim_set_hl(0, 'DiagnosticUnderlineHint', { fg = c.cyan, undercurl = true })
-	end,
-})
-vim.cmd([[colorscheme rasmus]])
+			-- Rust
+			hl('@type.rust', { fg = c.bright_yellow })
+			hl('@constant.builtin.rust', { fg = c.bright_green })
+			hl('@module.rust', { fg = c.yellow, force = true })
+
+			-- diagnostics
+			hl('DiagnosticUnderlineError', { fg = c.red, undercurl = true })
+			hl('DiagnosticUnderlineWarn', { fg = c.yellow, undercurl = true })
+			hl('DiagnosticUnderlineInfo', { fg = c.blue, undercurl = true })
+			hl('DiagnosticUnderlineHint', { fg = c.cyan, undercurl = true })
+		end,
+	})
+	vim.cmd([[colorscheme rasmus]])
+end)
