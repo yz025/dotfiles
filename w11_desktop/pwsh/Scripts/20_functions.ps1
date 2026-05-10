@@ -14,6 +14,7 @@ function cdproj ($path) {
 function cdconf ($path) {
 	Set-Location "$env:XDG_CONFIG_HOME\$path"
 }
+
 # utils
 function exif_sep {
 	New-Item -ItemType Directory -Name "originals"
@@ -29,4 +30,15 @@ function fedora {
 }
 function global:reload {
     . $PROFILE
+}
+
+# yazi
+function y {
+    $tmp = (New-TemporaryFile).FullName
+    yazi $args --cwd-file="$tmp"
+    $cwd = Get-Content -Path $tmp -Encoding UTF8
+    if (-not [String]::IsNullOrEmpty($cwd) -and $cwd -ne $PWD.Path) {
+        Set-Location -LiteralPath (Resolve-Path -LiteralPath $cwd).Path
+    }
+    Remove-Item -Path $tmp
 }

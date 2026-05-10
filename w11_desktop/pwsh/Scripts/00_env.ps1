@@ -1,0 +1,6 @@
+$env:EDITOR = "nvim"
+$env:YAZI_CONFIG_HOME = "$env:XDG_CONFIG_HOME\yazi"
+$env:YAZI_FILE_ONE = "$HOME\scoop\apps\git\current\usr\bin\file.exe"
+$env:DDF_TARGET = "$HOME\Documents\dotfiles"
+$env:Path += ";$HOME\Documents\projects\ddf\target\release"
+$env:Path += ";$HOME\Documents\projects\git_fetch_mtime"

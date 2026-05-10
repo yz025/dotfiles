@@ -1,29 +1,3 @@
-# modules
-. "$PSScriptRoot\functions.ps1"
-. "$PSScriptRoot\update.ps1"
-
-
-# alias
-Set-Alias vim nvim
-Set-Alias obs ~/scoop/apps/obsidian/current/Obsidian.com
-
-# env_vars
-$env:EDITOR = "nvim"
-$env:YAZI_CONFIG_HOME = "$env:XDG_CONFIG_HOME\yazi"
-$env:YAZI_FILE_ONE = "$HOME\scoop\apps\git\current\usr\bin\file.exe"
-$env:DDF_TARGET = "$HOME\Documents\dotfiles"
-$env:Path += ";$HOME\Documents\projects\ddf\target\release"
-$env:Path += ";$HOME\Documents\projects\git_fetch_mtime"
-
-# yazi
-function y {
-    $tmp = (New-TemporaryFile).FullName
-    yazi $args --cwd-file="$tmp"
-    $cwd = Get-Content -Path $tmp -Encoding UTF8
-    if (-not [String]::IsNullOrEmpty($cwd) -and $cwd -ne $PWD.Path) {
-        Set-Location -LiteralPath (Resolve-Path -LiteralPath $cwd).Path
-    }
-    Remove-Item -Path $tmp
-}
+Get-ChildItem -Path "$PSScriptRoot\Scripts" -Filter *.ps1 | ForEach-Object { . $_.FullName }
 
 Invoke-Expression (&starship init powershell)
