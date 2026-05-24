@@ -1,0 +1,29 @@
+[tools]
+# lua
+lua-language-server = 'latest'
+stylua = 'latest'
+
+# zig
+zig = '0.16.0'
+zls = 'latest'
+
+# go
+go = 'latest'
+'go:golang.org/x/tools/gopls' = 'latest'
+'go:github.com/golangci/golangci-lint/cmd/golangci-lint' = 'latest'
+goreleaser = 'latest'
+
+# rust
+rust = 'latest'
+
+# tui tools
+yazi = 'latest'
+resvg = 'latest'
+bottom = 'latest'
+fastfetch = 'latest'
+neovim = '0.12.2'
+
+tree-sitter = 'latest'
+
+# shell tools
+starship = 'latest'
