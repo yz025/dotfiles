@@ -5,7 +5,7 @@ stylua = 'latest'
 
 # zig
 zig = '0.16.0'
-zls = 'latest'
+zls = '0.16.0'
 
 # go
 go = 'latest'
@@ -15,6 +15,9 @@ goreleaser = 'latest'
 
 # rust
 rust = 'latest'
+
+# arduino
+arduino-cli = 'latest'
 
 # tui tools
 yazi = 'latest'

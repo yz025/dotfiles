@@ -34,7 +34,6 @@ function cdnotes() {
 		cd "$HOME/Documents/notes/$1"
 	fi
 }
-
 # yazi
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
