@@ -21,5 +21,4 @@
 * Theme
     * [rasmus](https://github.com/kvrohit/rasmus.nvim)
 ## Notes
-* I use [tocp](https://github.com/yz025/tocp) to organize my dotfiles
-* [git_fetch_mtime](https://github.com/yz025/git_fetch_mtime) is needed for starship.
+* [tocp](https://github.com/yz025/tocp)
