@@ -1,0 +1,34 @@
+[tools]
+# lua
+lua-language-server = 'latest'
+stylua = 'latest'
+
+# zig
+zig = '0.16.0'
+zls = '0.16.0'
+
+# go
+go = 'latest'
+'go:golang.org/x/tools/gopls' = 'latest'
+'go:github.com/golangci/golangci-lint/cmd/golangci-lint' = 'latest'
+goreleaser = 'latest'
+
+# rust
+rust = 'latest'
+
+# arduino
+arduino-cli = 'latest'
+
+# tui tools
+yazi = 'latest'
+resvg = 'latest'
+bottom = 'latest'
+fastfetch = 'latest'
+neovim = '0.12.2'
+
+# cli tools
+tree-sitter = 'latest'
+'go:github.com/yz025/tocp' = 'latest'
+
+# shell tools
+starship = 'latest'
