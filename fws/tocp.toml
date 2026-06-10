@@ -1,31 +1,31 @@
 [[pairs]]
 src = "$HOME/.config/starship"
-dst = "$DOTFILES/fws/starship"
+dst = "$DOTFILES/starship"
 
 [[pairs]]
 src = "$HOME/.config/alacritty"
-dst = "$DOTFILES/fws/alacritty"
+dst = "$DOTFILES/alacritty"
 
 [[pairs]]
 src = "$HOME/.bashrc.d"
-dst = "$DOTFILES/fws/bash/.bashrc.d"
+dst = "$DOTFILES/bash/.bashrc.d"
 
 [[pairs]]
 src = "$HOME/.bashrc"
-dst = "$DOTFILES/fws/bash/.bashrc"
+dst = "$DOTFILES/bash/.bashrc"
 
 [[pairs]]
 src = "$HOME/Documents/projects/.clang-format"
-dst = "$DOTFILES/fws/.clang-format"
+dst = "$DOTFILES/.clang-format"
 
 [[pairs]]
 src = "$HOME/.config/nvim"
-dst = "$DOTFILES/fws/nvim"
+dst = "$DOTFILES/nvim"
 
 [[pairs]]
 src = "$HOME/.config/yazi"
-dst = "$DOTFILES/fws/yazi"
+dst = "$DOTFILES/yazi"
 
 [[pairs]]
 src = "$HOME/.config/mise"
-dst = "$DOTFILES/fws/mise"
+dst = "$DOTFILES/mise"

@@ -4,12 +4,10 @@ function append_path() {
     fi
 }
 
-append_path "$HOME/Documents/projects/git_fetch_mtime" # git_fetch_mtime
-
 export EDITOR="nvim"
 export STARSHIP_CONFIG_HOME="$HOME/.config/starship"
 export STARSHIP_CONFIG="$STARSHIP_CONFIG_HOME/starship.toml"
-export DOTFILES="$HOME/Documents/dotfiles"
+export DOTFILES="$HOME/Documents/dotfiles/fws"
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
 # ssh agent
