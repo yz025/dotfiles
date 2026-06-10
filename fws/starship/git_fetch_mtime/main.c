@@ -18,7 +18,7 @@
 void print_result(double diff) {
     long sec = (long)diff;
 
-    if (sec >= 100 * 24 * HOUR) { // 100 days
+    if (sec >= 100 * 24 * HR) { // 100 days
         fputs("99d+", stdout);
         return;
     }
@@ -27,7 +27,7 @@ void print_result(double diff) {
     sec %= (24 * HR);
 
     long hrs = sec / HR;
-    sec %= HOUR;
+    sec %= HR;
 
     long min = sec / 60;
 
