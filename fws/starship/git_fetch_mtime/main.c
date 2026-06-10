@@ -13,7 +13,7 @@
 #endif
 // clang-format on
 
-#define HOUR 3600
+#define HR 3600
 
 void print_result(double diff) {
     long sec = (long)diff;
@@ -23,10 +23,10 @@ void print_result(double diff) {
         return;
     }
 
-    long days = sec / (24 * HOUR);
-    sec %= (24 * HOUR);
+    long days = sec / (24 * HR);
+    sec %= (24 * HR);
 
-    long hrs = sec / HOUR;
+    long hrs = sec / HR;
     sec %= HOUR;
 
     long min = sec / 60;
