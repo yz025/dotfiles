@@ -1,5 +1,11 @@
 BasedOnStyle: LLVM
 IndentWidth: 4
+UseTab: Never
+
+AllowShortFunctionsOnASingleLine: Inline
+AllowShortLambdasOnASingleLine: All
+AllowShortBlocksOnASingleLine: true
+
 AlignAfterOpenBracket: true
 ColumnLimit: 0
 DerivePointerAlignment: true
