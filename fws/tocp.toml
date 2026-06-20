@@ -29,3 +29,7 @@ dst = "$DOTFILES/yazi"
 [[pairs]]
 src = "$HOME/.config/mise"
 dst = "$DOTFILES/mise"
+
+[[pairs]]
+src = "../.git/hooks/post-merge"
+dst = "$DOTFILES/post-merge"
