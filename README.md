@@ -1,6 +1,6 @@
 # dotfiles
 ## Table
-* Windows 11 (`w11_desktop`)
+* Windows 11
     * [nvim](https://github.com/neovim/neovim) 0.12.2 with [mini.nvim](https://github.com/nvim-mini/mini.nvim), [minimax](https://github.com/nvim-mini/MiniMax)
     * pwsh 7.6.0
     * [alacritty](https://github.com/alacritty/alacritty)
@@ -10,7 +10,7 @@
     * [starship](https://github.com/starship/starship)
     * [.clang-format](https://clang.llvm.org/docs/ClangFormat.html)
     * [stylua](https://github.com/JohnnyMorganz/StyLua)
-* Fedora (`fws`, `f43_wsl`(likely outdated))
+* Fedora
     * [nvim](https://github.com/neovim/neovim) 0.12.2 with [mini.nvim](https://github.com/nvim-mini/mini.nvim), [minimax](https://github.com/nvim-mini/MiniMax)
     * bash
     * [alacritty](https://github.com/alacritty/alacritty)

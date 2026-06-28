@@ -13,21 +13,21 @@
 #endif
 // clang-format on
 
-#define HOUR 3600
+#define HR 3600
 
 void print_result(double diff) {
     long sec = (long)diff;
 
-    if (sec >= 100 * 24 * HOUR) { // 100 days
+    if (sec >= 100 * 24 * HR) { // 100 days
         fputs("99d+", stdout);
         return;
     }
 
-    long days = sec / (24 * HOUR);
-    sec %= (24 * HOUR);
+    long days = sec / (24 * HR);
+    sec %= (24 * HR);
 
-    long hrs = sec / HOUR;
-    sec %= HOUR;
+    long hrs = sec / HR;
+    sec %= HR;
 
     long min = sec / 60;
 
@@ -59,4 +59,3 @@ int main(void) {
 
     return 0;
 }
-// adding bullshit to test git hook

@@ -32,10 +32,6 @@ now(function()
 end)
 
 now(function()
-	require('mini.starter').setup()
-end)
-
-now(function()
 	require('mini.statusline').setup()
 end)
 
