@@ -31,5 +31,9 @@ src = "$HOME/.config/mise"
 dst = "$DOTFILES/mise"
 
 [[pairs]]
+src = "$HOME/.config/fontconfig"
+dst = "$DOTFILES/fontconfig"
+
+[[pairs]]
 src = "../.git/hooks/post-merge"
 dst = "$DOTFILES/post-merge"

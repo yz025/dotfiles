@@ -4,11 +4,11 @@ import = [ "./alacritty-rasmus.toml" ]
 live_config_reload = true
 
 [font]
+normal = { family = "monospace", style = "SemiBold" }
+bold = { family = "monospace", style = "Bold" }
+italic = { family = "monospace", style = "SemiBold Italic" }
+bold_italic = { family = "monospace", style = "Bold Italic" }
 size = 11.5
-
-[font.normal]
-family = "JetBrainsMono Nerd Font"
-style = "SemiBold"
 
 [keyboard]
 bindings = [
