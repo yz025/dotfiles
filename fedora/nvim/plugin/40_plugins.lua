@@ -49,6 +49,7 @@ now_if_args(function()
     add({ 'https://github.com/neovim/nvim-lspconfig' })
 
     vim.lsp.enable({
+        'bashls',
         'clangd',
         'gopls',
         'lua_ls',

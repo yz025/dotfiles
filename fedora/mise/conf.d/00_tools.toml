@@ -1,0 +1,17 @@
+[tools]
+starship = 'latest'
+
+bottom = 'latest'
+fastfetch = 'latest'
+yazi = 'latest'
+
+resvg = 'latest'
+ffmpeg = 'latest'
+fd = 'latest'
+ripgrep = 'latest'
+fzf = 'latest'
+zoxide = 'latest'
+imagemagick = 'latest'
+'aqua:ip7z/7zip' = 'latest'
+
+'go:github.com/yz025/tocp' = 'latest'

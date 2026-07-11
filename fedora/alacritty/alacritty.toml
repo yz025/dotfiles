@@ -1,13 +1,13 @@
 [general]
-import = [ "./alacritty-rasmus.toml" ]
+import = [ "./alacritty_rasmus.toml" ]
 
 live_config_reload = true
 
 [font]
-normal = { family = "monospace", style = "SemiBold" }
-bold = { family = "monospace", style = "Bold" }
-italic = { family = "monospace", style = "SemiBold Italic" }
-bold_italic = { family = "monospace", style = "Bold Italic" }
+normal = { family = "JetBrainsMono Nerd Font", style = "SemiBold" }
+bold = { family = "JetBrainsMono Nerd Font", style = "Bold" }
+italic = { family = "JetBrainsMono Nerd Font", style = "SemiBold Italic" }
+bold_italic = { family = "JetBrainsMono Nerd Font", style = "Bold Italic" }
 size = 11.5
 
 [keyboard]

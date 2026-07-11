@@ -1,5 +1,6 @@
 format = """
 $directory\
+$container\
 $git_branch\
 $git_status\
 $git_state\
@@ -13,6 +14,9 @@ $character"""
 [character]
 success_symbol = '[\$_](bold green)'
 error_symbol = '[\$_](bold red)'
+
+[container]
+format = '[\[$name\] ]($style)'
 
 [custom.git_fetch_mtime]
 command = '$STARSHIP_CONFIG_HOME/git_fetch_mtime/git_fetch_mtime'

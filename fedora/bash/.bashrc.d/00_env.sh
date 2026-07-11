@@ -13,5 +13,5 @@ export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 # ssh agent
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 if [ ! -S "$SSH_AUTH_SOCK" ]; then
-    eval "$(ssh-agent -a "$SSH_AUTH_SOCK")" > /dev/null
+    eval "$(ssh-agent -a "$SSH_AUTH_SOCK")" >/dev/null
 fi
