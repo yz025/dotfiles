@@ -1,12 +1,12 @@
 format = """
 $directory\
-$container\
 $git_branch\
 $git_status\
 $git_state\
 ${custom.git_fetch_mtime}\
 $cmake\
 $zig
+$container\
 $character"""
 
 "$schema" = 'https://starship.rs/config-schema.json'
